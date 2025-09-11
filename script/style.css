@@ -300,7 +300,7 @@
   color: #555;
 }
 
-.features-grid {
+.feeatures-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -1127,10 +1127,16 @@ display: block;
 .ff-badges {
   background: #000000;
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   border-radius: 4px;
-  padding: 4px 10px;
+  padding: 4px 16px !important;
+}
+.strikethrough {
+  text-decoration: line-through;
+  color: #888;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 /* Bonus */
@@ -1820,6 +1826,234 @@ display: block;
 
 
 
+
+.featuresssssss-section {
+  padding: 60px 20px;
+}
+
+.featuresssssss-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featuresssssss-section .header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.featuresssssss-section .header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.featuresssssss-section .header .brand {
+  color: #3b82f6;
+}
+
+.featuresssssss-section .header .subtitle {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.featuresssssss-section .gradient-text {
+  background: linear-gradient(90deg, #7c3aed, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- GRID LAYOUT SESUAI GAMBAR --- */
+.featuresssssss-section .features-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+  margin-top: 30px  ;
+  margin-bottom: 30px;
+}
+
+.featuresssssss-section .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.featuresssssss-section .card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    border: 1px solid #f97316;
+
+}
+
+.featuresssssss-section .card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+.featuresssssss-section .card h3 i {
+  color: #3b82f6;
+  padding: 10px;
+}
+
+.featuresssssss-section .card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 26px !important;
+}
+
+.featuresssssss-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.featuresssssss-section .tags span {
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.featuresssssss-section .img-placeholder {
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f0f9ff);
+  border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(199, 199, 199, 0.4);
+
+}
+.featuresssssss-section .img-placeholder img {
+  width: 100%;
+ 
+}
+
+/* kartu yang lebih lebar */
+.featuresssssss-section .span-2 {
+  grid-column: span 2;
+    grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.featuresssssss-section .cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.featuresssssss-section .cta-btn {
+  background: linear-gradient(90deg, #f97316, #fb923c);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.featuresssssss-section .cta-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.roi-section {
+    background: #f8fafc;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  .roi-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0f172a;
+  }
+  .roi-subtitle {
+    color: #64748b;
+    margin-bottom: 40px;
+  }
+  .brand {
+    color: #2563eb;
+  }
+  .roi-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+  .roi-input h3, .roi-result h3 {
+    margin-bottom: 20px;
+    color: #0f172a;
+  }
+  .roi-input label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #334155;
+  }
+  .roi-input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+  }
+  .roi-input button {
+    margin-top: 30px;
+    background: #f97316;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+  .roi-input button:hover {
+    opacity: 0.9;
+  }
+  .result-box {
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .result-box b {
+    font-size: 22px;
+    display: block;
+    margin-top: 4px;
+  }
+  .result-box.green { background: #fff8f2;color: #1f2937; }
+  .result-box.blue { background: #fff8f2; color: #1f2937;}
+  .result-box.yellow { background: #fff8f2; color: #1f2937; }
+  .result-box.yellow b { color: #1f2937; }
+  .result-box small { display: block; margin-top: 6px; font-size: 14px; color: #374151; }
+
+
+
+
+
+
 .footer-section {
   background: #1f2937;
   color: #f9fafb;
@@ -1943,6 +2177,9 @@ display: block;
   }
 }
 @media (max-width: 640px) {
+  .roi-card {
+      grid-template-columns: 1fr;
+    }
   .hero h1 {
         font-size: 1.8rem;
       }
