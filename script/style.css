@@ -2130,6 +2130,15 @@ display: block;
   font-size: 0.7rem;
   font-weight: 400;
 }
+.footer-img {
+  max-width: 150px;
+  margin-top: 20px;
+  place-self: anchor-center;
+  }
+  .footer-img img {
+    width: 100%;
+    text-align: center;
+  }
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.1);
