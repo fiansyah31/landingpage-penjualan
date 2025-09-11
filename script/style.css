@@ -1146,14 +1146,97 @@ display: block;
 
 /* Comparison */
 .ff-comparison { padding:3rem 1rem; background:linear-gradient(180deg,#fafafa,#fff); }
-.ff-compare-title { font-size:24px; margin-bottom:2rem; }
-.ff-compare-title span { color:#ff6600; }
+.ff-comparison-title { font-size:24px; margin-bottom:2rem; }
+.ff-comparison-title span { color:#ff6600; }
 .ff-table { width:100%; border-collapse:collapse; }
 .ff-table th, .ff-table td {
   border:1px solid #ddd; padding:12px; font-size:14px; text-align:center;
 }
 .ff-table th { background:#f4f4f4; font-weight:600; }
 .ff-btn-bottom { margin-top:2rem; }
+
+
+.comparison-section {
+  background: linear-gradient(180deg, #fff, #f9fafc);
+  padding: 60px 20px;
+}
+
+.comparison-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.comparison-table thead th {
+  background: #f9fafc;
+  font-weight: 600;
+  color: #333;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #111827;
+}
+
+.check {
+  color: #2563eb;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cross {
+  color: #ef4444;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.price span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.price.blue {
+  color: #2563eb;
+}
+.price.red {
+  color: #ef4444;
+}
+
+.pricing-row td {
+  font-size: 1.05rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 
 /* Buttons */
 .ff-btn {
@@ -1872,6 +1955,16 @@ display: block;
   .footer-right {
     margin-top: 30px;
   }
+  
+
+  .trust-logo {
+  max-height: 50px;
+  max-width: 160px;
+
+}
+.featurees-grid {
+    grid-template-columns: repeat(1, 1fr);}
+
 }
 
 /* Animations */
