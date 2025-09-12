@@ -1054,13 +1054,14 @@ h2 {
 }
 
 .fp-features li i{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+margin-right: 10px;
   color: #10b981;
 }
+.fp-features li span{
 
+font-size: 14px;
+}
 
 
 
@@ -1937,9 +1938,14 @@ display: block;
 .featuresssssss-section .span-2 {
   grid-column: span 2;
     grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
-
+.featuresssssss-section .span-3 {
+  grid-column: span 2;
+    grid-row-start: 1;
+  grid-row-end: 3;
+  width: 500px;
+}
 .featuresssssss-section .cta {
   text-align: center;
   margin-top: 60px;
@@ -2222,7 +2228,9 @@ display: block;
 .featuresssssss-section .card {
     margin-bottom: 20px;
 }
-
+.featuresssssss-section .span-3 {
+  width: 100% !important;
+}
 
 }
 
