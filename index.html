@@ -44,6 +44,7 @@
       what you create with Formflow is entirely up to you.
     </div> Description -->
 
+                            
     <!-- Video -->
     <div class="hero-video">
       <iframe 
@@ -62,7 +63,8 @@
     </ul>
     <br><br>
     <!-- CTA -->
-    <a href="#" class="hero-cta">Dapatkan Diskon 90% Sekarang!→</a>
+    <a href="#" class="hero-cta">Dari Rp. 1̶.̶5̶0̶0̶.̶0̶0̶0̶/bulan Sekarang Hanya Rp. 150.000/bulan.
+      Hemat 90% dari solusi lainnya!</a>
     <div class="hero-note"> Garansi 30 hari uang Kembali
 </div>
   </section>
@@ -99,7 +101,7 @@
       <p>Tidak bisa mengembangkan bisnis karena harus terus menerus memantau dan membalas chat</p>
     </div>
   </div></br>
-  <a href="#" class="hero-cta">Lihat Solusinya Sekarang→</a>
+  <a href="#" class="btn-bonus">Lihat Solusinya Sekarang→</a>
 </section>
 
 <!-- Omnichannel Section (Refined Style) -->
@@ -116,8 +118,14 @@
         dengan <span class="highlight">unlimited AI respon</span> dan harga lebih hemat <span class="highlight">90% dari kompetitor!</span>
       </p>
       <ul class="featuress">
-        <li>⚡ Balas dalam 30 detik</li>
-        <li>🚀 Setup 15 menit saja</li>
+        <li><i class="fa-solid fa-circle-check"></i> Balas dalam 30 detik</li>
+        <li><i class="fa-solid fa-circle-check"></i> Setup 15 menit saja</li>
+        
+      </ul>
+      <ul class="featuress">
+       
+        <li><i class="fa-solid fa-circle-check"></i> Hemat 90% biaya CS</li>
+        <li><i class="fa-solid fa-circle-check"></i> Kurangi churn 50%</li>
       </ul>
       
     </div>
@@ -409,7 +417,7 @@
     </div>
 
    
-       <a href="#" class="hero-cta">Lihat Solusinya Sekarang→</a>
+       <a href="#" class="btn-bonus">Lihat Solusinya Sekarang→</a>
     
   </div>
 </section>
@@ -430,13 +438,13 @@
         <h3>Input Data Bisnis Anda:</h3>
 
         <label>Jumlah customer chat per hari:</label>
-        <input type="number" id="chatPerDay" placeholder="Contoh: 50">
+        <input type="number" id="chatPerDay" placeholder="Contoh: 50" value="50">
 
         <label>Rata-rata revenue per customer (Rp):</label>
-        <input type="number" id="revenuePerCustomer" placeholder="Contoh: 150000">
+        <input type="number" id="revenuePerCustomer" placeholder="Contoh: 150000" value="150000">
 
         <label>Biaya CS saat ini per bulan (Rp):</label>
-        <input type="number" id="currentCSCost" placeholder="Contoh: 8000000">
+        <input type="number" id="currentCSCost" placeholder="Contoh: 8000000" value="8000000">
 
         <button onclick="calculateFP()">Hitung ROI Saya</button>
       </div>
@@ -1073,7 +1081,6 @@ new Swiper('.trust-swiper', {
     const currentCSCost = parseFloat(document.getElementById('currentCSCost').value);
 
     if (isNaN(chatPerDay) || isNaN(revenuePerCustomer) || isNaN(currentCSCost)) {
-      alert("Mohon isi semua field dengan angka yang valid");
       return;
     }
 
@@ -1084,10 +1091,17 @@ new Swiper('.trust-swiper', {
     const totalROI = savingCS + extraRevenue;
     const roiPercent = (totalROI / currentCSCost) * 100;
 
-    document.getElementById('savingCS').innerHTML = `Penghematan Biaya CS:<br><b>Rp ${savingCS.toLocaleString()}/bulan</b>`;
-    document.getElementById('extraRevenue').innerHTML = `Tambahan Revenue (AI conversion):<br><b>Rp ${extraRevenue.toLocaleString()}/bulan</b>`;
-    document.getElementById('totalROI').innerHTML = `Total ROI per bulan:<br><b>Rp ${totalROI.toLocaleString()}</b><br><small>ROI: ${roiPercent.toFixed(0)}% dalam bulan pertama!</small>`;
+    document.getElementById('savingCS').innerHTML = 
+      `Penghematan Biaya CS:<br><b>Rp ${savingCS.toLocaleString()}/bulan</b>`;
+    document.getElementById('extraRevenue').innerHTML = 
+      `Tambahan Revenue (AI conversion):<br><b>Rp ${extraRevenue.toLocaleString()}/bulan</b>`;
+    document.getElementById('totalROI').innerHTML = 
+      `Total ROI per bulan:<br><b>Rp ${totalROI.toLocaleString()}</b><br>
+      <small>ROI: ${roiPercent.toFixed(0)}% dalam bulan pertama!</small>`;
   }
+
+  // Jalankan saat halaman selesai dimuat
+  window.addEventListener('DOMContentLoaded', calculateFP);
 </script>
 
 </body>
