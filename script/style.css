@@ -114,6 +114,10 @@
       line-height: 26px;
     }
 
+    .hero-cta .harga-diskon{
+      text-decoration: line-through;
+    }
+
     .hero-cta:hover {
       transform: scale(1.05);
     }
@@ -2225,7 +2229,7 @@ display: block;
 
   .trust-logo {
   max-height: 50px;
-  max-width: 160px;
+  max-width: 120px;
 
 }
 .featurees-grid {
