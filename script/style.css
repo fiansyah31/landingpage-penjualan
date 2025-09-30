@@ -2290,6 +2290,34 @@ display: block;
   flex-flow: wrap;
 }
 
+.featurees-section{
+  padding: 0px 20px;
+}
+
+.transform-section {
+  padding: 40px 20px;
+}
+
+.roi-section {
+  padding: 40px 20px;
+}
+.roi-input input 
+{
+  width: 90%;
+  max-width: 100%;
+}
+.roi-card {
+  padding: 20px;
+  max-width: 100%;
+}
+.ff-list ul li {
+  text-align: left;
+  font-size: 12px;
+}
+.fp-features li {
+  padding-left: 0px;
+}
+
 }
 
 @media (max-width: 480px) {
