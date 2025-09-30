@@ -2275,6 +2275,18 @@ display: block;
     gap: 15px;
 }
 
+.section-title {
+  flex-flow: wrap;
+}
+
+.roi-title {
+  flex-flow: wrap;
+}
+
+.fp-title{
+  flex-flow: wrap;
+}
+
 }
 
 @media (max-width: 480px) {
