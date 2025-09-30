@@ -670,10 +670,16 @@ h2 {
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 10px;
+  display: flex
+;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .section-title span {
   color: #059669; /* aksen hijau */
+  margin: 10px;
 }
 
 .section-subtitle {
@@ -954,12 +960,17 @@ h2 {
   font-weight: 700;
   color: #111827;
   margin-bottom: 10px;
+      display: flex
+;
+    justify-content: center;
+    align-items: center;
 }
 
 .fp-title .fp-highlight {
   background: linear-gradient(90deg, #f97316, #f43f5e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0 10px;
 }
 
 .fp-subtitle {
@@ -1290,9 +1301,14 @@ display: block;
   font-weight: 700;
   color: #111827;
   margin-bottom: 10px;
+        display: flex
+;
+    justify-content: center;
+    align-items: center;
 }
 .workai-title span {
   color: #2563eb;
+  margin: 0 10px;
 }
 .workai-subtitle {
   font-size: 1rem;
@@ -1991,6 +2007,13 @@ display: block;
     font-weight: 700;
     margin-bottom: 6px;
     color: #0f172a;
+      display: flex
+;
+    justify-content: center;
+    align-items: center;
+  }
+  .roi-title span{
+    margin: 10px;
   }
   .roi-subtitle {
     color: #64748b;
