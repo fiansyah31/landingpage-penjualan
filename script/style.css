@@ -2318,6 +2318,10 @@ display: block;
   padding-left: 0px;
 }
 
+.ff-list {
+  padding: 10px;
+}
+
 }
 
 @media (max-width: 480px) {
